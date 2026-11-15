@@ -45,6 +45,13 @@ h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;letter-spacing:-1.5px;color:
 .final h2{color:white}.final p{max-width:620px;margin:12px auto 24px;color:#eafaff}
 .final .btn{background:white;color:var(--pink)}
 footer{text-align:center;padding:28px 0 40px;color:#7893a8;font-size:.9rem}
+.play-store-button {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.play-badge {
+    height: 64px;
+    display: block;
+}
 @media(max-width:760px){.nav{justify-content:center}.nav-links{display:none}.games{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.pet-visual{order:-1}.safe{grid-template-columns:repeat(2,1fr)}section{padding:45px 0}.feature-band{padding:25px}}
 @media(max-width:460px){.games{grid-template-columns:1fr}.hero{padding-bottom:45px}h1{letter-spacing:-1.5px}.hero-img{border-radius:18px}}
 </style>    
@@ -90,7 +97,16 @@ footer{text-align:center;padding:28px 0 40px;color:#7893a8;font-size:.9rem}
 <div class="safe"><div class="safe-item"><span>🚫</span>No ads</div><div class="safe-item"><span>📴</span>Works offline</div><div class="safe-item"><span>🔒</span>No personal data</div><div class="safe-item"><span>🌍</span>8 languages</div></div>
 </div></section>
 
-<section><div class="wrap final"><h2>Ready to make math playtime?</h2><p>Download Math Trainer and let your child fall in love with math, one fun task at a time!</p><a class="btn" href="https://play.google.com/store/apps/details?id=com.indiedev.mathtrainer" target="_blank" rel="noopener">Get it on Google Play ↗</a></div></section>
+<section>
+    <div class="wrap final"><h2>Ready to make math playtime?</h2>
+    <p>Download Math Trainer and let your child fall in love with math, one fun task at a time!</p>
+    <div class="play-store-button">
+            <a href="https://play.google.com/store/apps/details?id=com.indiedev.mathtrainer" target="_blank">
+                <img src="GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play" class="play-badge">
+            </a>
+        </div>
+    </div>
+</section>
 </main>
 <footer><div class="wrap">Math Trainer · Little steps, big smiles</div>
 <p><a href="https://mathtrainerapplication.github.io/privacy" class="privacy-link">Privacy Policy</a></p>
